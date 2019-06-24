@@ -1,0 +1,82 @@
+# .bashrc
+
+ 
+
+# Source global definitions
+
+if [ -f /etc/bashrc ]; then
+
+        . /etc/bashrc
+
+fi
+
+#rui'd alias
+alias p="pwd"
+alias l="ls -ltr"
+alias la="ls -latr"
+alias c="clear"
+alias h="history"
+alias f="file"
+
+alias rm='rm -i'
+
+alias mv='mv -i'
+
+alias cp='cp -i'
+
+alias ch='/vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs'
+
+alias check='/vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs'
+
+alias sit='cd /home/ruiguo/eor-qa-cvs/eor/systest/lib'
+
+alias vnc='vncserver -geometry 1600x900'
+
+alias golden='cd /vol/eor-qa/sanity/golden/eor/systest/lib/'
+
+alias freeze='cd /vol/eor-qa/sanity/freeze/eor/systest/lib/'
+
+alias nongolden='cd /vol/eor-qa/sanity/non-golden/eor/systest/lib/'
+
+alias anuj='cd /home/anujmitt/eor-qa-cvs/eor/systest/lib/'
+
+alias log='cd /vol/eor-qa/sanity/logs'
+
+alias mylog='cd /vol/eor-qa/sanity/logs/ruiguo'
+
+alias result="grep 'Result = ' *.log"
+
+alias sanityall='/vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t all | more'
+
+alias vilog='vi *.log'
+
+PYTHONDONTWRITEBYTECODE=1
+
+export PYTHONDONTWRITEBYTECODE
+
+ 
+
+tb() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t $1 | more; }
+
+sanity() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t sanity$1; }
+
+n9kv() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t n9kv$1; }
+
+del() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -s $1 -d; }
+
+stp() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t $1 -S; }
+
+lo() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t $1 -lo "$2"; }
+
+ul() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -t $1 -ul -f; }
+
+pri() { /vol/eor-qa/sanity/snoopy/eor/sanity-infra/check-jobs -s $1 -p $2; }
+
+ 
+alias num='find . -type f | wc -l'
+alias pip='/users/lindach/.local/bin/pip'
+
+CVSROOT=:pserver:${USER}@172.31.202.135:/cvsroot
+CVS_RSH=ssh
+
+export CVSROOT CVS_RSH
