@@ -80,3 +80,5 @@ CVSROOT=:pserver:${USER}@172.31.202.135:/cvsroot
 CVS_RSH=ssh
 
 export CVSROOT CVS_RSH
+export TCCLASS="/vol/eor-qa/eor/systest/lib/testcases/tcclass_map.yml"
+
