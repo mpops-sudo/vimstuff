@@ -1,4 +1,13 @@
-:echo expand('%:p') #full path
-:echo expand('%:e') #file's extension
-:echo @% #directory/name of file
-:echo expand('%:t') #name of file ('tail')
+# print specific range (5 - 8)
+sed -n 5,8p file
+
+# print multiple lines (5 & 8)
+sed -n -e 5p -e 8p file
+
+# print range with other specific line (5 - 8 & 10)
+sed -n -e 5,8p -e 10p file
+
+# print specific range (8 - 12) with specific line number 
+cat -n yourfile | sed -n '8,12p'
+
+
