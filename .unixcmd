@@ -1,0 +1,4 @@
+:echo expand('%:p') #full path
+:echo expand('%:e') #file's extension
+:echo @% #directory/name of file
+:echo expand('%:t') #name of file ('tail')
