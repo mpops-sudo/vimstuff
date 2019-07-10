@@ -1,15 +1,20 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH="$HOME/.brew/bin:$HOME/.brew/sbin:$PATH"
 export GOPATH=$HOME/Desktop/Coding/golang
 export GOBIN=$HOME/Desktop/Coding/golang/bin
+export GOROOT="/usr/local/go"
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/lindach/.oh-my-zsh"
-
+export CODING="/Users/lindach/Desktop/Coding"
+alias python="python3"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
+export FLASK_APP=flaskr
+export FLASK_ENV=development
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -109,3 +114,14 @@ alias fmg="/Users/lindach/Downloads/ffmpeg-20190618-ebcf4d3-macos64-static/bin/f
 alias sshk="vim /Users/lindach/.ssh/known_hosts"
 alias combine="python ~/scripts/ffmg/combine.py"
 alias f="file"
+alias gdb="/Users/lindach/Desktop/Coding/clike/gdb-8.3/gdb/gdb"
+export HISTTIMEFORMAT="%c "
+alias pip="python /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pip/__main__.py"
+
+rem() {
+    sed -i '' $1'd' /Users/lindach/.ssh/known_hosts
+}
+
+rem2() {
+    sed -i '' $1'd' $2
+}
