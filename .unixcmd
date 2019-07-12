@@ -14,3 +14,18 @@ cat -n yourfile | sed -n '8,12p'
 man -P cat man
 man ls | cat
 
+# "This is" and "sentence" is not included in the match
+(?<=This is)(.*)(?=sentence)
+# entire sentence
+This is(.*)sentence
+# greedy and will match till the last "sentence" in your string
+.*
+#  lazy and will match till the next "sentence" in your string.
+.*?
+
+# Listing top level directories
+echo */
+# list 2 lvl deep dirs
+echo */*/
+
+

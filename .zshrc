@@ -103,6 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias rc="vim ~/.zshrc"
+alias vc="vim /Users/lindach/Desktop/Coding/vimstuff/.vimcmd"
+alias uc="vim /Users/lindach/Desktop/Coding/vimstuff/.unixcmd"
 alias c="clear"
 alias p="pwd"
 alias l="ls -ltr"
