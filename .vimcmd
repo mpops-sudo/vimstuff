@@ -8,3 +8,6 @@
 
 # case sensitive matching
 /\Ccopyright
+
+# exact match
+/\<int\>

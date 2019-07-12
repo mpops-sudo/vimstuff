@@ -10,4 +10,7 @@ sed -n -e 5,8p -e 10p file
 # print specific range (8 - 12) with specific line number 
 cat -n yourfile | sed -n '8,12p'
 
+# print out man page in terminl
+man -P cat man
+man ls | cat
 
