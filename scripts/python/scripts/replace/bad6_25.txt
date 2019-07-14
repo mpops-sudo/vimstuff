@@ -1,0 +1,6 @@
+['/vol/eor-qa/sanity/golden/basic_sanity.py', '-build', 'tftp://172.31.144.92/sanity-image/divvenka-1561381316-nxos.9.2.2v.IHP8.0.19.bin', '-testsuite', '/vol/eor-qa/sanity/logs/snoopy/1561381741/it_acl_qos_uls.yml', '-logicaldict', '/vo
+l/eor-qa/sanity/logs/snoopy/1561381741/logical_dict.yml', '-testbed', '/vol/eor-qa/sanity/logs/snoopy/1561381741/sanity97-testbed.yml', '-logfile', '/vol/eor-qa/sanity/logs/snoopy/1561381741/it_acl_qos_uls-sanity97.log', '-reportfile', '/vol/eor-qa/sanity
+/logs/snoopy/1561381741/it_acl_qos_uls-sanity97.report', '-email', 'n9k-sanity@cisco.com,eor-sanity@external.cisco.com', '-jobid', 'INNOV', 'TOR', 'ACL', 'QOS', 'ULS', ':', 'H_UTOPIAS_REL_9_2_2V_IHP8_0_19', '-stoponfail', 'False', '-pauseonfail', 'False',
+ '-basemode', 'False', '-collectlogs', 'False', '-containermode', 'False', '-dockermode', 'False', '-oc', 'False', '-yang', 'False', '-INTTransitDefault', 'False', '-INTTransitL3Heavy', 'False', '-issu_build', 'skip', '-ctrl_
+ plugin_image', 'skip', '-issu_cases', 'testReloadSwitch', '-patch', 'skip', '-cflow', 'skip', '-reportsubject', 'Firestone', 'ChemneyRock', 'it_acl_qos_uls', '-comments', ' %%% /auto/Insieme-EOR3/release/h_utopias/nexus/REL_9_2_2v_IHP8_0_19/build/images/
+final']
