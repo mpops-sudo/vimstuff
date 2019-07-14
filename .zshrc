@@ -120,6 +120,8 @@ alias f="file"
 alias gdb="/Users/lindach/Desktop/Coding/clike/gdb-8.3/gdb/gdb"
 export HISTTIMEFORMAT="%c "
 alias pip="python /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pip/__main__.py"
+alias mysql="/usr/local/mysql/bin/mysql -u root -p"
+alias rel="source ~/.zshrc"
 
 rem() {
     sed -i '' $1'd' /Users/lindach/.ssh/known_hosts

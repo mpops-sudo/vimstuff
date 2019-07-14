@@ -17,8 +17,6 @@ man ls | cat
 # "This is" and "sentence" is not included in the match
 (?<=This is)(.*)(?=sentence)
 # entire sentence
-This is(.*)sentence
-# greedy and will match till the last "sentence" in your string
 .*
 #  lazy and will match till the next "sentence" in your string.
 .*?
@@ -28,4 +26,12 @@ echo */
 # list 2 lvl deep dirs
 echo */*/
 
+# print what grep sees with various forms of quoting, what the shell does with the various types of quoting
+printf '<%s>\n' G "G" 'G' \G "\G" '\G' \\G "\\G" '\\G'
+
+#get user groups
+id
+
+# output mysql cmd history
+sed "s/\\\040/ /g" < ~/.mysql_history
 
