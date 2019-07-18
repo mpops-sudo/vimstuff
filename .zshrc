@@ -113,7 +113,7 @@ alias la="ls -latr"
 alias h="history"
 alias fmg="/Users/lindach/Downloads/ffmpeg-20190618-ebcf4d3-macos64-static/bin/ffmpeg"
 #alias fmg="/Users/lindach/Downloads/ffmpeg-20190618-ebcf4d3-macos64-static/bin/ffmpeg -i file:$0 file:$1 -c:v copy -c:a copy $2"
-
+alias mh="sed 's/\\\040/ /g' < ~/.mysql_history"
 alias sshk="vim /Users/lindach/.ssh/known_hosts"
 alias combine="python ~/scripts/ffmg/combine.py"
 alias f="file"

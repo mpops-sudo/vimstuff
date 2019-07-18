@@ -35,3 +35,30 @@ id
 # output mysql cmd history
 sed "s/\\\040/ /g" < ~/.mysql_history
 
+arp a
+ip a
+netstat -ie
+netstat -ie | grep eth2 -C 5
+
+# largest current directories
+du -a . | sort -n -r | head -n 5
+
+# python colored output
+print('\x1b[6;30;42m' + 'Success!' + '\x1b[0m')
+
+# python color choices
+def print_format_table():
+    """
+    prints table of formatted text format options
+    """
+    for style in range(8):
+        for fg in range(30,38):
+            s1 = ''
+            for bg in range(40,48):
+                format = ';'.join([str(style), str(fg), str(bg)])
+                s1 += '\x1b[%sm %s \x1b[0m' % (format, format)
+            print(s1)
+        print('\n')
+
+print_format_table()
+
