@@ -62,3 +62,5 @@ def print_format_table():
 
 print_format_table()
 
+# get sentence count only
+wc -l < interface_uls.yml 

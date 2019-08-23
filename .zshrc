@@ -5,9 +5,17 @@ export GOPATH=$HOME/Desktop/Coding/golang
 export GOBIN=$HOME/Desktop/Coding/golang/bin
 export GOROOT="/usr/local/go"
 # Path to your oh-my-zsh installation.
+#/Users/lindach/Library/Python/3.7/lib/python/site-packages
+#export PYTHONPATH="/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages"
+#PYTHONPATH=$PYTHONPATH:"/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django"
+export PATH=$PATH:/usr/local/mysql-8.0.16-macos10.14-x86_64/bin
 export ZSH="/Users/lindach/.oh-my-zsh"
 export CODING="/Users/lindach/Desktop/Coding"
 alias python="python3"
+alias rm="rm -i"
+alias news="ssh lindach@10.16.204.56"
+alias news2="ssh root@10.16.204.56"
+alias curr="cd /Users/lindach/Desktop/Cisco/DEV_CURR/sanity-web-master"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -15,7 +23,13 @@ alias python="python3"
 ZSH_THEME="robbyrussell"
 export FLASK_APP=flaskr
 export FLASK_ENV=development
+export NVM_DIR="$HOME/.nvm"
+export JQUERY="/Users/lindach/Desktop/Cisco/sanity-gui/marcus/jquery-3.4.1.js"
+export POPPER="/Users/lindach/Desktop/Cisco/sanity-gui/marcus/popper.min.js"
+export STRAPCSS="/Users/lindach/Desktop/Cisco/sanity-gui/marcus/bootstrap-4.3.1-dist/css/bootstrap.min.css"
+export STRAPJS="/Users/lindach/Desktop/Cisco/sanity-gui/marcus/bootstrap-4.3.1-dist/js/bootstrap.min.js"
 
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
@@ -77,7 +91,10 @@ export FLASK_ENV=development
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-
+source ~/.docker_cmds.sh
+source ~/.screenrc
+source ~/.gitrc
+alias drc='vim ~/.docker_cmds.sh'
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -103,6 +120,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias services="launchctl list"
+alias web="cd /Users/lindach/Desktop/Coding/webdev"
+alias src="source  ~/.zshrc"
 alias rc="vim ~/.zshrc"
 alias vc="vim /Users/lindach/Desktop/Coding/vimstuff/.vimcmd"
 alias uc="vim /Users/lindach/Desktop/Coding/vimstuff/.unixcmd"
@@ -113,15 +133,15 @@ alias la="ls -latr"
 alias h="history"
 alias fmg="/Users/lindach/Downloads/ffmpeg-20190618-ebcf4d3-macos64-static/bin/ffmpeg"
 #alias fmg="/Users/lindach/Downloads/ffmpeg-20190618-ebcf4d3-macos64-static/bin/ffmpeg -i file:$0 file:$1 -c:v copy -c:a copy $2"
-alias mh="sed 's/\\\040/ /g' < ~/.mysql_history"
 alias sshk="vim /Users/lindach/.ssh/known_hosts"
 alias combine="python ~/scripts/ffmg/combine.py"
 alias f="file"
 alias gdb="/Users/lindach/Desktop/Coding/clike/gdb-8.3/gdb/gdb"
 export HISTTIMEFORMAT="%c "
 alias pip="python /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pip/__main__.py"
-alias mysql="/usr/local/mysql/bin/mysql -u root -p"
-alias rel="source ~/.zshrc"
+#alias rel="source ~/.zshrc"
+alias big="ls -alSh"
+alias screen="/usr/local/Cellar/screen/4.6.2/bin/screen"
 
 rem() {
     sed -i '' $1'd' /Users/lindach/.ssh/known_hosts
@@ -130,3 +150,18 @@ rem() {
 rem2() {
     sed -i '' $1'd' $2
 }
+#MYSQL stuff
+alias mysql="/usr/local/mysql/bin/mysql -u root -p"
+alias mysqladmin="/usr/local/mysql/bin/mysqladmin"
+alias mh="sed 's/\\\040/ /g' < ~/.mysql_history"
+alias vrc='vim ~/.vimrc'
+#alias django-admin='/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/django/bin/django-admin.py'
+alias p2='/usr/bin/python'
+alias p3='/Library/Frameworks/Python.framework/Versions/3.7/bin/python3'
+#alias p3='/Users/lindach/Desktop/Coding/python/venv/django/bin/python'
+alias cis='cd /Users/lindach/Desktop/Cisco'
+alias agf='ag -liG'
+
+# Created by `userpath` on 2019-08-07 22:44:10
+export PATH="$PATH:/Users/lindach/.local/bin"
+

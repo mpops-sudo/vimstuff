@@ -1,0 +1,35 @@
+alias gs="git status"
+alias gc="git commit -m $1"
+alias ga="git add"
+#~/.git_cmds.sh
+alias grc="vim ~/.gitrc"
+# prints number of cmd line args
+alias grun="~/.gitrc"
+if [ $# -gt 0 ]; then
+    echo "Your command line contains $# arguments"
+else
+    echo "Your command line contains no arguments"
+fi
+
+# ADD MUL GIT FILE
+#for (( c=0; c<$#; c++ ))
+#do
+#	echo -n "$c "
+#  echo $c
+#	sleep 1
+#done
+tem=5
+alias gam= "while (( "$tem" )); do  echo $1 shift done"
+
+alias gt="git log --all --decorate --oneline --graph"
+alias gs="git show"
+
+alias gl="git log"
+alias gll="git log --oneline"
+
+alias grm="git rm"
+alias gch="git checkout"
+alias gr="git revert"
+
+gb="git branch"
+gchb="git checkout -b"
