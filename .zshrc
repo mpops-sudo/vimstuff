@@ -13,9 +13,14 @@ export ZSH="/Users/lindach/.oh-my-zsh"
 export CODING="/Users/lindach/Desktop/Coding"
 alias python="python3"
 alias rm="rm -i"
-alias news="ssh lindach@10.16.204.56"
-alias news2="ssh root@10.16.204.56"
-alias curr="cd /Users/lindach/Desktop/Cisco/DEV_CURR/sanity-web-master"
+alias news="ssh lindach@10.16.204.5"
+alias news2="ssh root@10.16.204.5"
+alias san2="ssh lindach@172.31.146.95"
+alias dj1="ssh djangouser@inno-lnx"
+alias dj2="ssh root@inno-lnx2"
+alias curr="cd /Users/lindach/Desktop/Cisco/DEV_CURR/sanity-web"
+alias sec="cd /Users/lindach/Downloads/sigma/1566601784/working"
+alias me="cd /Users/lindach/Downloads/sigma/1566601784/working"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -162,6 +167,8 @@ alias p3='/Library/Frameworks/Python.framework/Versions/3.7/bin/python3'
 alias cis='cd /Users/lindach/Desktop/Cisco'
 alias agf='ag -liG'
 
+
 # Created by `userpath` on 2019-08-07 22:44:10
 export PATH="$PATH:/Users/lindach/.local/bin"
 
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"

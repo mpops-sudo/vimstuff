@@ -2,6 +2,7 @@ alias gs="git status"
 alias gc="git commit -m $1"
 alias ga="git add"
 #~/.git_cmds.sh
+alias gd="git diff HEAD^ HEAD "
 alias grc="vim ~/.gitrc"
 # prints number of cmd line args
 alias grun="~/.gitrc"
@@ -29,7 +30,15 @@ alias gll="git log --oneline"
 
 alias grm="git rm"
 alias gch="git checkout"
-alias gr="git revert"
+alias gr="git remote -v"
 
 gb="git branch"
 gchb="git checkout -b"
+
+alias gp="git push"
+alias gpl="git pull"
+alias grh="git reset --hard"
+
+alias gpre="git reset --hard ORIG_HEAD"
+alias gname=" git config --global user.name"
+alias gmail="git config --global user.email "

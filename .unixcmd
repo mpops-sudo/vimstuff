@@ -63,4 +63,15 @@ def print_format_table():
 print_format_table()
 
 # get sentence count only
+
 wc -l < interface_uls.yml 
+
+# sed escape chars
+# https://unix.stackexchange.com/questions/32907/what-characters-do-i-need-to-escape-when-using-sed-in-a-sh-script
+
+
+# save my running jobs to file
+echo > mine.txt && me > mine.txt && cat mine.txt | grep -ohE "\-[0-9]{10}" > mine.txt
+
+
+mail -a "mine.txt" -s "Job Priority Raise for IntfUls Testsuites" shihchi@cisco.com < /dev/null 

@@ -115,3 +115,4 @@ alias mysql='/usr/bin/mysql --defaults-file=/etc/my.cnf'
 alias vrc='vim ~/.vimrc'
 alias tests='cd /vol/eor-qa/eor/systest/lib/testcases'
 
+echo > mine.txt && me > mine.txt && cat mine.txt | grep -ohE "\-[0-9]{10}" > mine.txt
