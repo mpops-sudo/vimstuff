@@ -75,3 +75,8 @@ echo > mine.txt && me > mine.txt && cat mine.txt | grep -ohE "\-[0-9]{10}" > min
 
 
 mail -a "mine.txt" -s "Job Priority Raise for IntfUls Testsuites" shihchi@cisco.com < /dev/null 
+
+ssh vagrant@127.0.0.1 -p 2222
+
+lscpu
+cat /proc/cpuinfo
