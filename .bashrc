@@ -117,3 +117,36 @@ alias la="ls -latr"
 alias c="clear"
 alias h="history"
 alias f="file"
+
+alias p="pwd"
+alias c="clear"
+alias la="ls -latr"
+alias l="ls -ltr"
+alias ic="cd /mnt/c/Users/Marcus"
+alias mkd="mkdir"
+alias rc="vim ~/.bashrc"
+alias src="source ~/.bashrc"
+alias f="file "
+alias rmd="rmdir"
+#export GOBIN="/mnt/c/Users/Marcus/Desktop/Class/Coding/golang/bin"
+#export GOPATH="/mnt/c/Users/Marcus/Desktop/Class/Coding/golang"
+export CODING="/mnt/c/Users/Marcus/Desktop/Class/Coding"
+  alias his="history "
+    alias gri="valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes --track-origins=yes "
+    alias griv ="valgrind -v --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes "
+    alias g++="g++ -Wall -Werror "
+    alias gcc="gcc -Wall -Werror "
+    alias untar='tar zxvf '
+    alias ls='ls --color=auto'
+    alias psqlon= "pg_lsclusters" # check postgres status
+
+    alias psql='sudo -u postgres psql' # start postgres
+    alias psqlres='sudo service postgresql restart' # restart postgres
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias rm='rm -i '
+    alias egrep='egrep --color=auto'
+
