@@ -32,8 +32,8 @@ alias grm="git rm"
 alias gch="git checkout"
 alias gr="git remote -v"
 
-gb="git branch"
-gchb="git checkout -b"
+alias gb="git branch"
+alias gchb="git checkout -b"
 
 alias gp="git push"
 alias gpl="git pull"
