@@ -34,11 +34,11 @@ alias gr="git remote -v"
 
 alias gb="git branch"
 alias gchb="git checkout -b"
-
+alias gref="git reflog show"
 alias gp="git push"
 alias gpl="git pull"
 alias grh="git reset --hard"
 
 alias gpre="git reset --hard ORIG_HEAD"
 alias gname=" git config --global user.name"
-alias gmail="git config --global user.email "
+alias gmail="git config --global user.email"
