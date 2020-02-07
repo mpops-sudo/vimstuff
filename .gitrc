@@ -32,7 +32,7 @@ alias grm="git rm"
 alias gch="git checkout"
 alias gr="git remote -v"
 
-alias gb="git branch"
+alias gb="git branch -v"
 alias gchb="git checkout -b"
 alias gref="git reflog show"
 alias gp="git push"
