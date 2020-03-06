@@ -1,4 +1,6 @@
 alias gs="git status"
+alias glast="git log --name-status HEAD^..HEAD"
+
 alias gc="git commit -m $1"
 alias ga="git add"
 #~/.git_cmds.sh
@@ -15,13 +17,14 @@ fi
 # ADD MUL GIT FILE
 #for (( c=0; c<$#; c++ ))
 #do
-#	echo -n "$c "
+#       echo -n "$c "
 #  echo $c
-#	sleep 1
+#       sleep 1
 #done
 tem=5
 alias gam= "while (( "$tem" )); do  echo $1 shift done"
-
+alias gwho= "git log --pretty=format:\"%an, %ae - %s\""
+alias gstat="git log --stat"
 alias gt="git log --all --decorate --oneline --graph"
 alias gs="git show"
 
@@ -31,8 +34,10 @@ alias gll="git log --oneline"
 alias grm="git rm"
 alias gch="git checkout"
 alias gr="git remote -v"
-
-alias gb="git branch -v"
+alias gnb="git checkout -b "
+alias gchnewg="git checkout staff/master -- "
+alias gitgrade="git push personal master"
+alias gb="git branch -av"
 alias gchb="git checkout -b"
 alias gref="git reflog show"
 alias gp="git push"
