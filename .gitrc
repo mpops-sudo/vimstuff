@@ -1,6 +1,6 @@
 alias gs="git status"
 alias glast="git log --name-status HEAD^..HEAD"
-
+alias gtrack="git ls-tree -r master --name-only"
 alias gc="git commit -m $1"
 alias ga="git add"
 #~/.git_cmds.sh
