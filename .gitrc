@@ -30,6 +30,7 @@ alias gs="git show"
 
 alias gl="git log"
 alias gll="git log --oneline"
+alias grev="git revert "
 
 alias grm="git rm"
 alias gch="git checkout"
